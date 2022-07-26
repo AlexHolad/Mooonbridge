@@ -1,0 +1,42 @@
+.mobile-menu-container {
+    width: 81vw;
+    height: 90vh;
+    padding-right: 2px;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    right: 0;
+    background: white;
+    border: 1px solid black;
+}
+
+.hidden {
+    transform: translateX(+81vw);
+}
+
+.shown {
+    transform: translate(-2vw, 2vw);
+
+}
+
+.mobile-menu-container svg {
+    font-size: 32px;
+}
+
+nav {
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 4vw;
+}
+nav ul li{
+    width: 50%;
+}
+

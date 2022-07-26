@@ -1,11 +1,18 @@
-import './App.css';
-// import Form from './components/Form';
+import React, { useState } from "react";
+import "./App.css";
+import MobileMenu from "./components/MobileMenu";
+
+import NavMobile from "./components/NavMobile";
 
 function App() {
+  const [menu, setMenu] = useState(false);
+  const menuToggler = () => {
+    setMenu(!menu);
+  };
   return (
     <div className="App">
-      <h1>Moonbridge</h1>
-      {/* <Form/> */}
+      {menu && <MobileMenu menu={menu} menuToggler={menuToggler} />}
+      <NavMobile menuToggler={menuToggler} />
     </div>
   );
 }
